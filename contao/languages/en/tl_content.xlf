@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+    <file datatype="php" original="contao/languages/en/tl_content.php" source-language="en">
+        <body>
+            <trans-unit id="tl_content.swiperSettings.0">
+                <source>Swiper settings</source>
+            </trans-unit>
+            <trans-unit id="tl_content.swiperSettings.1">
+                <source>Choose a Swiper configuration</source>
+            </trans-unit>
+            <trans-unit id="tl_content.slider_legend">
+                <source>Slider settings</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,37 @@
+{% extends "@Contao/content_element/swiper.html.twig" %}
+
+
+{% block script %}
+    {% add "swiper_js" to body %}
+        <script src="{{ asset('js/swiper-bundle.min.js', 'contao-components/swiper') }}"></script>
+    {% endadd %}
+
+    {% add "swiper_default_js" to body %}
+        {% set script_attributes = attrs()
+            .setIfExists('nonce', csp_nonce('script-src'))
+            .mergeWith(script_attributes|default)
+        %}
+        <script{{ script_attributes }}>
+            (function() {
+                const swiper = document.querySelectorAll('.content-swiper .swiper');
+                swiper.forEach (el => {
+                    let opts = JSON.parse(el.getAttribute('data-settings') ?? '{}');
+
+                    new Swiper(el, Object.assign({
+                        {% block init_options %}
+                            pagination: {
+                                el: '.swiper-pagination',
+                                clickable: true,
+                            },
+                            navigation: {
+                                prevEl: el.querySelector('.swiper-button-prev'),
+                                nextEl: el.querySelector('.swiper-button-next'),
+                            },
+                            {# Put custom options here #}
+                        {% endblock %}
+                    }, opts));
+                });
+            })();
+        </script>
+    {% endadd %}
+{% endblock %}

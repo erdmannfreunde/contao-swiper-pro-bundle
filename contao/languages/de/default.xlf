@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+    <file datatype="php" original="contao/languages/en/default.php" source-language="en" target-language="de">
+        <body>
+            <trans-unit id="CTE.swiper_pro.0">
+                <source>Swiper Pro</source>
+                <target>Swiper Pro</target>
+            </trans-unit>
+            <trans-unit id="CTE.swiper_pro.1">
+                <source>Creates a slider with custom Swiper settings</source>
+                <target>Erstellt einen Slider mit individuellen Swiper-Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="MOD.swiper_settings.0">
+                <source>Swiper Settings</source>
+                <target>Swiper-Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="MOD.swiper_settings.1">
+                <source>Manage Swiper slider configurations</source>
+                <target>Swiper-Slider-Konfigurationen verwalten</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

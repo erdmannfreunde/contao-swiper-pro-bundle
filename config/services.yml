@@ -1,0 +1,6 @@
+services:
+    _defaults:
+        autoconfigure: true
+
+    ErdmannFreunde\ContaoSwiperProBundle\Controller\ContentElement\:
+        resource: '../src/Controller/ContentElement/*'

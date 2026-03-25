@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.1">
+    <file datatype="php" original="contao/languages/en/tl_swiper_settings.php" source-language="en">
+        <body>
+            <trans-unit id="tl_swiper_settings.title_legend">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.config_legend">
+                <source>Swiper Configuration</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.title.0">
+                <source>Title</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.title.1">
+                <source>Enter a title for this configuration</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.config.0">
+                <source>Configuration</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.config.1">
+                <source>Swiper configuration in YAML format</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
