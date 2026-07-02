@@ -66,36 +66,32 @@
     {% endadd %}
 
     {% add "swiper_pro_js" to body %}
-    <!-- swiper pro -->
         <script>
-            const swiper_{{ data.id }} = document.querySelector('.swiper-{{data.id}}');
-
-            if (swiper_{{ data.id }}) {
-
+            document.querySelectorAll('.content-swiper-pro .swiper').forEach(function (el) {
                 let opts = {};
 
-                let swiperSettings = swiper_{{ data.id }}.getAttribute('data-settings');
+                let swiperSettings = el.getAttribute('data-settings');
                 if (swiperSettings) {
-                    swiperSettings = JSON.parse(swiperSettings);
-                    opts = Object.assign({}, swiperSettings, opts);
+                    opts = Object.assign({}, JSON.parse(swiperSettings), opts);
                 }
 
-                new Swiper(swiper_{{ data.id }}, Object.assign({
+                const wrapper = el.closest('.content-swiper-pro');
+
+                new Swiper(el, Object.assign({
                     {% block init_options %}
                         pagination: {
-                            el: '.swiper-pagination',
+                            el: wrapper.querySelector('.swiper-pagination'),
                             clickable: true,
                         },
                         navigation: {
-                            prevEl: swiper_{{ data.id }}.closest('.content-swiper-pro').querySelector('.swiper-button-prev'),
-                            nextEl: swiper_{{ data.id }}.closest('.content-swiper-pro').querySelector('.swiper-button-next'),
+                            prevEl: wrapper.querySelector('.swiper-button-prev'),
+                            nextEl: wrapper.querySelector('.swiper-button-next'),
                             addIcons: false,
                         },
                         watchOverflow: true,
-
                     {% endblock %}
                 }, opts));
-            }
+            });
         </script>
     {% endadd %}
 {% endblock %}
