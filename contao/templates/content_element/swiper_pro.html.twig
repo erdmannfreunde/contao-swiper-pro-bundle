@@ -41,7 +41,7 @@
 
     </div>
         {% block controls %}
-            {% if not as_editor_view %}
+            {% if not as_editor_view and not (settings.navigation is defined and settings.navigation is same as(false)) %}
                 {% set button_prev_attributes = attrs()
                     .set('type', 'button')
                     .addClass('swiper-button-prev')
@@ -68,29 +68,39 @@
     {% add "swiper_pro_js" to body %}
         <script>
             document.querySelectorAll('.content-swiper-pro .swiper').forEach(function (el) {
+                const wrapper = el.closest('.content-swiper-pro');
+
                 let opts = {};
 
                 let swiperSettings = el.getAttribute('data-settings');
                 if (swiperSettings) {
-                    opts = Object.assign({}, JSON.parse(swiperSettings), opts);
+                    opts = JSON.parse(swiperSettings);
                 }
 
-                const wrapper = el.closest('.content-swiper-pro');
-
-                new Swiper(el, Object.assign({
+                const config = Object.assign({
                     {% block init_options %}
-                        pagination: {
-                            el: wrapper.querySelector('.swiper-pagination'),
-                            clickable: true,
-                        },
-                        navigation: {
-                            prevEl: wrapper.querySelector('.swiper-button-prev'),
-                            nextEl: wrapper.querySelector('.swiper-button-next'),
-                            addIcons: false,
-                        },
                         watchOverflow: true,
                     {% endblock %}
-                }, opts));
+                }, opts);
+
+                // Inject the DOM references while keeping any pagination/navigation
+                // options from the settings; false disables the feature entirely.
+                if (config.pagination !== false) {
+                    config.pagination = Object.assign({
+                        el: wrapper.querySelector('.swiper-pagination'),
+                        clickable: true,
+                    }, (config.pagination && typeof config.pagination === 'object') ? config.pagination : {});
+                }
+
+                if (config.navigation !== false) {
+                    config.navigation = Object.assign({
+                        prevEl: wrapper.querySelector('.swiper-button-prev'),
+                        nextEl: wrapper.querySelector('.swiper-button-next'),
+                        addIcons: false,
+                    }, (config.navigation && typeof config.navigation === 'object') ? config.navigation : {});
+                }
+
+                new Swiper(el, config);
             });
         </script>
     {% endadd %}

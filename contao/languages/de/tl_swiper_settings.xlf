@@ -6,6 +6,14 @@
                 <source>Title</source>
                 <target>Titel</target>
             </trans-unit>
+            <trans-unit id="tl_swiper_settings.options_legend">
+                <source>Options</source>
+                <target>Optionen</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.autoplay_legend">
+                <source>Autoplay</source>
+                <target>Autoplay</target>
+            </trans-unit>
             <trans-unit id="tl_swiper_settings.config_legend">
                 <source>Swiper Configuration</source>
                 <target>Swiper-Konfiguration</target>
@@ -23,8 +31,124 @@
                 <target>Konfiguration</target>
             </trans-unit>
             <trans-unit id="tl_swiper_settings.config.1">
-                <source>Swiper configuration in YAML format</source>
-                <target>Swiper-Konfiguration im YAML-Format</target>
+                <source>Swiper configuration in YAML format. These settings override the options selected above.</source>
+                <target>Swiper-Konfiguration im YAML-Format. Diese Einstellungen überschreiben die oben gewählten Optionen.</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffect.0">
+                <source>Transition effect</source>
+                <target>Übergangseffekt</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffect.1">
+                <source>Transition effect between the slides.</source>
+                <target>Übergangseffekt zwischen den Slides.</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperSpeed.0">
+                <source>Transition speed (ms)</source>
+                <target>Übergangsgeschwindigkeit (ms)</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperSpeed.1">
+                <source>Duration of the transition between slides in milliseconds.</source>
+                <target>Dauer des Übergangs zwischen den Slides in Millisekunden.</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperLoop.0">
+                <source>Loop</source>
+                <target>Endlosschleife</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperLoop.1">
+                <source>Enables continuous loop mode.</source>
+                <target>Aktiviert den fortlaufenden Loop-Modus.</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPagination.0">
+                <source>Pagination</source>
+                <target>Pagination</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPagination.1">
+                <source>Pagination style.</source>
+                <target>Pagination-Stil.</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperNavigation.0">
+                <source>Navigation</source>
+                <target>Navigation</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperNavigation.1">
+                <source>Shows the previous/next arrows.</source>
+                <target>Zeigt die Vor-/Zurück-Pfeile an.</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplay.0">
+                <source>Autoplay</source>
+                <target>Autoplay</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplay.1">
+                <source>Advances the slides automatically.</source>
+                <target>Wechselt die Slides automatisch.</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayDelay.0">
+                <source>Delay (ms)</source>
+                <target>Verzögerung (ms)</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayDelay.1">
+                <source>Delay between the slides in milliseconds (default 3000).</source>
+                <target>Verzögerung zwischen den Slides in Millisekunden (Standard 3000).</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayDisableOnInteraction.0">
+                <source>Disable on interaction</source>
+                <target>Bei Interaktion stoppen</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayDisableOnInteraction.1">
+                <source>Stops autoplay after the user interacts with the slider.</source>
+                <target>Stoppt das Autoplay, sobald Nutzer:innen mit dem Slider interagieren.</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayPauseOnMouseEnter.0">
+                <source>Pause on hover</source>
+                <target>Bei Hover pausieren</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayPauseOnMouseEnter.1">
+                <source>Pauses autoplay while the mouse is over the slider.</source>
+                <target>Pausiert das Autoplay, solange die Maus über dem Slider ist.</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.slide">
+                <source>Slide</source>
+                <target>Slide (Schieben)</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.fade">
+                <source>Fade</source>
+                <target>Fade (Überblenden)</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.cube">
+                <source>Cube</source>
+                <target>Cube (Würfel)</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.coverflow">
+                <source>Coverflow</source>
+                <target>Coverflow</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.flip">
+                <source>Flip</source>
+                <target>Flip (Umklappen)</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.cards">
+                <source>Cards</source>
+                <target>Cards (Karten)</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.creative">
+                <source>Creative</source>
+                <target>Creative</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPaginationOptions.bullets">
+                <source>Bullets</source>
+                <target>Bullets (Punkte)</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPaginationOptions.fraction">
+                <source>Fraction (e.g. 1/5)</source>
+                <target>Fraktion (z. B. 1/5)</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPaginationOptions.progressbar">
+                <source>Progress bar</source>
+                <target>Fortschrittsbalken</target>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPaginationOptions.none">
+                <source>Disabled</source>
+                <target>Deaktiviert</target>
             </trans-unit>
         </body>
     </file>

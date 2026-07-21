@@ -5,6 +5,12 @@
             <trans-unit id="tl_swiper_settings.title_legend">
                 <source>Title</source>
             </trans-unit>
+            <trans-unit id="tl_swiper_settings.options_legend">
+                <source>Options</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.autoplay_legend">
+                <source>Autoplay</source>
+            </trans-unit>
             <trans-unit id="tl_swiper_settings.config_legend">
                 <source>Swiper Configuration</source>
             </trans-unit>
@@ -18,7 +24,94 @@
                 <source>Configuration</source>
             </trans-unit>
             <trans-unit id="tl_swiper_settings.config.1">
-                <source>Swiper configuration in YAML format</source>
+                <source>Swiper configuration in YAML format. These settings override the options selected above.</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffect.0">
+                <source>Transition effect</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffect.1">
+                <source>Transition effect between the slides.</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperSpeed.0">
+                <source>Transition speed (ms)</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperSpeed.1">
+                <source>Duration of the transition between slides in milliseconds.</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperLoop.0">
+                <source>Loop</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperLoop.1">
+                <source>Enables continuous loop mode.</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPagination.0">
+                <source>Pagination</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPagination.1">
+                <source>Pagination style.</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperNavigation.0">
+                <source>Navigation</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperNavigation.1">
+                <source>Shows the previous/next arrows.</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplay.0">
+                <source>Autoplay</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplay.1">
+                <source>Advances the slides automatically.</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayDelay.0">
+                <source>Delay (ms)</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayDelay.1">
+                <source>Delay between the slides in milliseconds (default 3000).</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayDisableOnInteraction.0">
+                <source>Disable on interaction</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayDisableOnInteraction.1">
+                <source>Stops autoplay after the user interacts with the slider.</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayPauseOnMouseEnter.0">
+                <source>Pause on hover</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperAutoplayPauseOnMouseEnter.1">
+                <source>Pauses autoplay while the mouse is over the slider.</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.slide">
+                <source>Slide</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.fade">
+                <source>Fade</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.cube">
+                <source>Cube</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.coverflow">
+                <source>Coverflow</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.flip">
+                <source>Flip</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.cards">
+                <source>Cards</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperEffectOptions.creative">
+                <source>Creative</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPaginationOptions.bullets">
+                <source>Bullets</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPaginationOptions.fraction">
+                <source>Fraction (e.g. 1/5)</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPaginationOptions.progressbar">
+                <source>Progress bar</source>
+            </trans-unit>
+            <trans-unit id="tl_swiper_settings.swiperPaginationOptions.none">
+                <source>Disabled</source>
             </trans-unit>
         </body>
     </file>
