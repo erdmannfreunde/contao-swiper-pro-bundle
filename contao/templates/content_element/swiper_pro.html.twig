@@ -66,7 +66,11 @@
     {% endadd %}
 
     {% add "swiper_pro_js" to body %}
-        <script>
+        {% set script_attributes = attrs()
+            .setIfExists('nonce', csp_nonce('script-src'))
+            .mergeWith(script_attributes|default)
+        %}
+        <script{{ script_attributes }}>
             document.querySelectorAll('.content-swiper-pro .swiper').forEach(function (el) {
                 const wrapper = el.closest('.content-swiper-pro');
 
